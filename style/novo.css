@@ -1,0 +1,148 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #00314d;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mojlogo {
+    color: #00314d;
+    font-weight: bold;
+    margin: 20px 20px;
+    border-radius: 7px;
+    text-decoration: overline;
+    text-decoration-color: #efefef;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(228,28,35);
+    background: linear-gradient(90deg, rgba(228,28,35,1) 0%, rgba(21,114,197,1) 35%, rgba(239,239,224,1) 100%);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00314d;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #e41c23;
+}
+
+.novotekst {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #efefef;
+}
+
+.novotekst p{
+    color: #00314d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.novi-proizvodi {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.proizvod {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    flex: 0 0 calc(25% - 20px);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proizvod:hover {
+    transform: scale(1.05);
+}
+
+.proizvod img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+p {
+    color: #888;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lokacija,
+.kontakt,
+.drustvene-mreze {
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}

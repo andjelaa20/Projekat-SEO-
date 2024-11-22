@@ -1,0 +1,233 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #00314d;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mojlogo {
+    color: #00314d;
+    font-weight: bold;
+    margin: 20px 20px;
+    border-radius: 7px;
+    text-decoration: overline;
+    text-decoration-color: #efefef;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(228,28,35);
+    background: linear-gradient(90deg, rgba(228,28,35,1) 0%, rgba(21,114,197,1) 35%, rgba(239,239,224,1) 100%);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00314d;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #e41c23;
+}
+
+.pocetna {
+    text-align: center;
+}
+@keyframes banerheaderanimacija {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+#banerheader{
+    animation: banerheaderanimacija 2s infinite;
+}
+
+.pocetna h1{
+    color: #efefef;
+    font-weight: bold;
+}
+
+.pocetna h3{
+    color: #efefef;
+    font-weight: bold;
+}
+
+.pocetna img {
+    border-radius: 20px;
+    width: 1200px;
+    height: 600px;
+}
+.najprodavaniji-artikli {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artikal {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    flex: 0 0 calc(25% - 20px);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.artikal:hover {
+    transform: scale(1.05);
+}
+
+.artikal img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 200px;
+    object-fit: cover;
+}
+.artikal p,h3{
+    color: #333;
+    font-weight: bold;
+}
+.dnostranice {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.dnostranice h1 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dnostranice h1:hover{
+    transform: scale(1.10);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #1572c5;
+}
+
+.opis {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.opis:hover{
+    transform: scale(1.10);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #1572c5;
+}
+
+.video {
+    margin-top: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lokacija,
+.kontakt,
+.drustvene-mreze {
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .pocetna img {
+        width: 100%;
+        height: auto;
+    }
+
+    .najprodavaniji-artikli {
+        max-width: 100%;
+    }
+
+    .artikal {
+        flex: 0 0 calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pocetna img {
+        width: 100%;
+        height: auto;
+    }
+}
